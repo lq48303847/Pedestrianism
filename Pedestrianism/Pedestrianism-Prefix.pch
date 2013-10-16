@@ -5,7 +5,9 @@
 //
 
 #import <Availability.h>
-
+#define kSIDE_BAR_SHOULD_SHOW_NOTIFACATION @"sideBarShouldShowNotifacation"
+#define kSIDE_BAR_SHOULD_HIDE_NOTIFACATION @"sideBarShouldHideNotifacation"
+#define RGBColorMake(_R_,_G_,_B_,_alpha_) [UIColor colorWithRed:(_R_)/255.0 green:(_G_)/255.0 blue:(_B_)/255.0 alpha:(_alpha_)]
 #ifndef __IPHONE_3_0
 #warning "This project uses features only available in iOS SDK 3.0 and later."
 #endif
@@ -14,4 +16,6 @@
   #import <UIKit/UIKit.h>
   #import <Foundation/Foundation.h>
   #import <CoreData/CoreData.h>
+  #import "OPSetWindow.h"
+  #import "ASIFormDataRequest.h"
 #endif
